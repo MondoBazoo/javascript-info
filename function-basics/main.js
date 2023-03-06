@@ -52,3 +52,16 @@ function pow(x,n){
 }
 pow(3,2);
 
+
+
+///Arrow Functions///
+function ask(question, yes, no){
+  if(confirm(question)) yes();
+  else no();
+}
+ask(
+  "Do you agree?",
+  () => alert("You agreed."),
+  () => alert("You cancelled the execution")
+);
+
